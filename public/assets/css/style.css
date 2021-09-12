@@ -995,11 +995,11 @@ a:hover{
 .navbar-dark .navbar-nav .active > .nav-link {
 	font-weight: 700;
 }
-.navbar-dark.scrolled-nav .navbar-nav .active > .nav-link {
+.navbar-dark .scrolled-nav .navbar-nav .active > .nav-link {
 	color: #00356c;
 	font-weight: 700;
 }
-.navbar-dark.scrolled-nav .navbar-nav .nav-link{
+.navbar-dark .scrolled-nav .navbar-nav .nav-link{
 	color: #212529;
 }
 
@@ -1103,18 +1103,19 @@ a:hover{
     border-color: transparent;
 }
 
+.logo-top-scrolled{
+	background-image: url("/assets/images/logoColor.png") !important;
+	width: 200px !important;
+	height: 78px !important;
+	background-size: cover !important;
+}
 .logo-top-white{
 	background-image: url("/assets/images/logo-blanco-home.png");
 	width: 200px;
 	height: 78px;
 	background-size: cover;	
 }
-.logo-top-scrolled{
-	background-image: url("../img/logo-color.png");
-	width: 200px;
-	height: 78px;
-	background-size: cover;
-}
+
 
 /*TEST*/
 
@@ -1316,22 +1317,22 @@ a:hover{
 }
 
 .soluciones {
-	background-image: url('../img/sol-top-lg.jpg');
+	background-image: url('/assets/images/sol-top-lg.jpg');
 	background-position: 50% 50%;
 }
 .soluciones-liderazgo {
-	background-image: url('../img/top-liderazgo.jpg');
+	background-image: url('/assets/images/top-liderazgo.jpg');
 	background-position: 50% 50%;
 }
 
 .soluciones-conflictos {
-	background-image: url('../img/hero-conflictos.jpg');
+	background-image: url('/assets/images/hero-conflictos.jpg');
 	background-position: 50% 50%;
 }
 .contacto {
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url('../img/hero-contacto.jpg');
+	background-image: url('/assets/images/hero-contacto.jpg');
 	background-position: 50% 50%;
 	height: 600px;
 }
