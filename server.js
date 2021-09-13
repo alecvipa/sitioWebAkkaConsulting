@@ -41,18 +41,55 @@ app.get('/', function (req, res) {
 app.get('/privacidad', function (req, res) {
     res.render('privacidad');
 });
-app.get('/servicios', function (req, res) {
-    res.render('servicios');
+app.get('/outplacement', function (req, res) {
+    res.render('outplacement');
 });
 app.get('/contacto', function (req, res) {
     res.render('contacto');
 });
-app.get('/proyectos', function (req, res) {
-    res.render('proyectos');
+app.get('/capacitacion-directores-colaboradores-clave', function (req, res) {
+    res.render('capacitacion-directores-colaboradores-clave');
 });
-app.get('/influencermarketing', function (req, res) {
-    res.render('influencermarketing');
+app.get('/blog-post', function (req, res) {
+    res.render('blog-post');
 });
+app.get('/blog', function (req, res) {
+    res.render('blog');
+});
+app.get('/comunicacion-efectiva', function (req, res) {
+    res.render('comunicacion-efectiva');
+});
+app.get('/desarrollo-facilitadores', function (req, res) {
+    res.render('desarrollo-facilitadores');
+});
+app.get('/efectividad-en-almacenes', function (req, res) {
+    res.render('efectividad-en-almacenes');
+});
+app.get('/formacion-de-coaching', function (req, res) {
+    res.render('formacion-de-coaching');
+});
+app.get('/gestion-del-capital-humano', function (req, res) {
+    res.render('gestion-del-capital-humano');
+});
+app.get('/proceso-akka-consulting', function (req, res) {
+    res.render('proceso-akka-consulting');
+});
+app.get('/reestructuracion-areas-kpis', function (req, res) {
+    res.render('reestructuracion-areas-kpis');
+});
+app.get('/solucion-de-conflictos', function (req, res) {
+    res.render('solucion-de-conflictos');
+});
+app.get('/solucion-problemas-organizacionales', function (req, res) {
+    res.render('solucion-problemas-organizacionales');
+});
+app.get('/team-development', function (req, res) {
+    res.render('team-development');
+});
+app.get('/ventas-exitosas', function (req, res) {
+    res.render('ventas-exitosas');
+});
+
 
 // // Nodemailer route
 
