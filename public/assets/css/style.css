@@ -566,6 +566,9 @@ a:hover{
 .content-item:hover .pic img {
   opacity: 0.4;
 }
+.navb{
+    color: black !important;
+}
 
 .text-nuestras{
     position: absolute;

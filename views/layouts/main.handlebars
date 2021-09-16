@@ -60,7 +60,7 @@
         <div id="header-wrap" style="width: 100%; z-index: 2" class="fixed-top">
             <header id="header">
                 <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-dark">
+                    <nav id="navElement" class="navbar navbar-expand-lg navbar-dark">
                         <a class="navbar-brand" href="#">
                             <div id="logo" class="logo-top-white"></div>
                         </a>
@@ -224,7 +224,7 @@
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/slick.js"></script>
     <!--TODO: Put this code in script file-->
-    {{!--
+
     <script>
         $('div.dropdown').hover(function () {
             $('a.dropdown-toggle').dropdown("toggle");
@@ -284,16 +284,18 @@
                     header.addClass("scrolled-nav");
                 } else if (scroll >= 80 && width >= 993) {
                     header.addClass("scrolled-nav");
+                    header.removeClass("navbar-dark");
 
                 } else {
                     header.removeClass("scrolled-nav");
+                    header.addClass("navbar-dark");
                 }
             });
         });
 
 
-    </script> --}}
-    {{!--
+    </script>
+
     <script>
         window.onscroll = function () { scrollFunction() };
 
@@ -309,8 +311,7 @@
             }
         }
 
-    </script> --}}
-    {{!--
+    </script>
     <script>
         $(document).ready(function () {
             // executes when HTML-Document is loaded and DOM is ready
@@ -338,7 +339,7 @@
 
             // document ready  
         });
-    </script> --}}
+    </script>
     <!--  Counter	-->
     <script>
         (function ($) {
@@ -533,6 +534,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/init.js"></script>
 </body>
 
 </html>
