@@ -917,7 +917,7 @@ a:hover{
 @media (max-width:450px){
     .headerInicioMedia{
         font-size: 23px !important;
-        margin-top: -30%;
+        margin-top: -25%;
     }
     #header-bottom-wrap{
         height: 38rem;
