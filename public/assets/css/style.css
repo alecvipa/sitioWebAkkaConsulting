@@ -566,9 +566,7 @@ a:hover{
 .content-item:hover .pic img {
   opacity: 0.4;
 }
-.navb{
-    color: black !important;
-}
+
 
 .text-nuestras{
     position: absolute;
@@ -833,6 +831,7 @@ a:hover{
     border: 1px solid #dee2e6;
 }
 
+
 .excerpt .sub-section {
     padding-bottom: 40px;
 }
@@ -858,7 +857,9 @@ a:hover{
 	}
 }
 @media (max-width:992px){
-	
+	.navbar-toggler{
+        background-color: #0E3C72;
+    }
 }
 @media (max-width:768px){
 	
@@ -909,12 +910,47 @@ a:hover{
 		transform: translate(-50%, -50%);
 		text-align: center;
 	}
+    .nav-link {
+        color: #6C84A6 !important;
+    }
 }
 @media (max-width:450px){
+    .headerInicioMedia{
+        font-size: 23px !important;
+        margin-top: -30%;
+    }
+    #header-bottom-wrap{
+        height: 38rem;
+    }
+    .comoLoHacemosDiv{
+        margin-top: -27%;
+    }
 	
-		.social {
+	.social {
 		padding-left: 0;
 	}
+    .elementInicioMediaStyle{
+        margin-bottom: 10%;
+        width: 85%;
+        margin-left: 7%;
+    }
+    .nuestrosLogrosInicioMediaStyle{
+        margin-top: -20%;
+    }
+    .imgConoceMasMediaStyle{
+        margin-top: 11%;
+    }
+    .prevArrowMediaStyle{
+        position: relative !important;
+        left: 30% !important;
+    }
+    .nextArrowMediaStyle{
+        position: relative !important;
+        left: 40% !important;
+    }
+    .slickSliderMediaStyle{
+        margin-bottom: -23%;
+    }
 		
 	#header-bottom-wrap .container.sol {
 		text-align:center;
