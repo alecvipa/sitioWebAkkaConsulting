@@ -915,12 +915,24 @@ a:hover{
     }
 }
 @media (max-width:450px){
-    .headerInicioMedia{
-        font-size: 23px !important;
+    .contactoDivTitle{
+        margin-top: -15% !important;
+    }
+    .text-h2-soluciones{
+        margin-top: 18% !;
+    }
+    .text-h2-soluciones{
+        font-size: 30px !important;
+    }
+    .sol{
         margin-top: -25%;
     }
     #header-bottom-wrap{
-        height: 38rem;
+        height: 45rem;
+    }
+    .headerInicioMedia{
+        font-size: 23px !important;
+        margin-top: -25%;
     }
     .comoLoHacemosDiv{
         margin-top: -27%;
@@ -1657,9 +1669,14 @@ a:hover{
 }
 
 /*End carousel*/
+/* Contacto */
+
+.contactoDivTitle{
+    margin-top: -15% ;
+}
 
 /*contacto*/
-/* 
+
 .datos-contacto {
 	display: flex;
 	flex-wrap: wrap;
@@ -1713,10 +1730,10 @@ a:hover{
 	display: flex;
 	align-items: center;
 }
-} */
+} 
 /*Fake contact form*/
 
-/* 
+
 
 input[type=text] {
     width: 100%;
@@ -1748,4 +1765,4 @@ input[type=submit]:hover {
     background-color: transparent;
     border: 1px solid #FEBE31;
 	color: #FEBE31;
-} */
+}

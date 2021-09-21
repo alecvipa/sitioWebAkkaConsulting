@@ -91,39 +91,43 @@ app.get('/ventas-exitosas', function (req, res) {
 });
 
 
-// // Nodemailer route
+// Nodemailer route
 
-// app.post("/ajax/email", function (request, response) {
-//     console.log(email);
-//     const transporter = nodemailer.createTransport({
-//         service: 'gmail',
-//         secure: false,
-//         port: 25,
-//         auth: {
-//             user: email,
-//             pass: superSecretPwd
-//         },
-//         tls: {
-//             rejectUnauthorized: false
-//         }
-//     });
+app.post("/ajax/email", function (request, response) {
+    console.log(email);
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        secure: false,
+        port: 25,
+        auth: {
+            user: email,
+            pass: superSecretPwd
+        },
+        tls: {
+            rejectUnauthorized: false
+        }
+    });
 
-//     var textBody = `FROM: ${request.body.name}; EMAIL: ${request.body.email}; MESSAGE: ${request.body.message}`;
-//     var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p> <p>País de residencia: ${request.body.country} </p> <p> Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p><p>Número de contacto:${request.body.number} </p><p>Checkbox: ${request.body.checkbox}</p>`;
-//     var mail = {
-//         from: '"Team: Xyncs Web Studio',
-//         to: 'hebrit_626@hotmail.com',
-//         subject: '¡Alguien ha dejado sus datos en tu sitio web!',
-//         html: htmlBody
-//     };
-//     transporter.sendMail(mail, function (err, info) {
-//         if (err) {
-//             return console.log(err);
-//         } else {
-//             console.log("message sent!");
-//         };
-//     });
-// });
+    var textBody = `FROM: ${request.body.name}; EMAIL: ${request.body.email}; MESSAGE: ${request.body.message}`;
+    var htmlBody = `<h2>Correo de contacto</h2>
+    <p>Nombre: ${request.body.name}</p>
+     <p>Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p>
+     <p>Número de contacto:${request.body.number}</p>
+     <p>Message: ${request.body.message}</p>`;
+    var mail = {
+        from: '"Team: Xyncs Web Studio',
+        to: 'jhosue@akkaconsulting.com.mx',
+        subject: '¡Alguien ha dejado sus datos en tu sitio web!',
+        html: htmlBody
+    };
+    transporter.sendMail(mail, function (err, info) {
+        if (err) {
+            return console.log(err);
+        } else {
+            console.log("message sent!");
+        };
+    });
+});
 
 
 // Start our server so that it can begin listening to client requests.

@@ -13,6 +13,31 @@
     <script src="https://kit.fontawesome.com/a077a0470e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="shortcut icon" href="assets/images/favicon.png">
+    <script>
+        function submitEmailForm(form) {
+            var obj = new XMLHttpRequest();
+            obj.onreadystatechange = function () {
+                if (obj.readyState == 4) {
+                    if (obj.status == 200) {
+                        var res = JSON.parse(obj.responseText);
+                        alert(res.message);
+                    }
+                    else {
+                        console.log("XMLHttp status " + obj.status + ": " + obj.statusText);
+                    }
+                }
+            };
+            obj.open("post", form.action, true);
+            obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+            obj.send(JSON.stringify({ name: form.name.value, number: form.tel.value, email: form.email.value, message: form.message.value }));
+            alert("¡En breve te contactaremos!");
+            $(".formInput1").val("Nombre completo");
+            $(".formInput2").val("Teléfono");
+            $(".formInput3").val("Correo");
+            $(".formInput4").val("Cuéntanos tu necesidad");
+            return false;
+        }
+    </script>
 
 </head>
 

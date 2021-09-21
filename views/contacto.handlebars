@@ -1,4 +1,46 @@
 <div class="contactoDiv">
+    <!-- #header-wrap -->
+    <div id="header-bottom-wrap" class="is-clearfix top-img contacto">
+        <div class="cover">
+            <!--
+		  <picture>
+
+
+					  <source media="(min-width: 600px)" srcset="img/index-top.png" type="image/webp">
+			  		  <source media="(max-width: 599px)" srcset="img/index-top.png" type="image/webp">
+				      
+					  <source media="(min-width: 600px)" srcset="img/index-top.png" type="image/jpg">
+			          <source media="(max-width: 599px)" srcset="assets/img/header-top-sm.jpg" type="image/jpg">
+					  <source srcset="assets/img/header-top.jpg" type="image/jpg">
+					  <img style="width: 100%; object-fit: cover!important; min-height: 600px" src="assets/img/header-top.jpg" alt="">
+			</picture>
+-->
+
+            <div id="header-bottom" class="site-header-bottom">
+                <div id="header-bottom-inner" class="site-header-bottom-inner ">
+                    <section class="hero is-medium has-text-centered about">
+                        <div class="page-top hero-body">
+                            <div class="container sol">
+                                <h2 class="text-h2-soluciones">Contácta con alguno de nuestros consultores de</h2>
+
+                                <div class="" style="padding-top: 30px">
+                                    <a href="contacto"
+                                        class="button is-primary resp-btn-header btn-mar-top">Contáctanos</a>
+                                </div>
+
+                            </div>
+                            <!-- .hero-body -->
+                        </div>
+                        <!-- .container -->
+                    </section>
+                    <!-- .page-title -->
+                </div>
+                <!-- #header-bottom-inner -->
+            </div>
+        </div>
+        <!-- #header-bottom -->
+    </div>
+    <!-- #header-bottom-wrap -->
     <!-- import content layouts and modules -->
 
     <section class="default-padding" style="background-color: #EFF7FF">
@@ -18,39 +60,37 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 d-flex align-items-cent sub-title pad-int" style="flex-wrap: wrap">
-                    <h3>Compártenos tus datos para agendar una asesoría</h3>
-                    <form action="/action_page.php">
+                    <h3>¡Agenda una asesoría con nosotros!</h3>
+                    <form action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
 
 
-
-
-                        <input type="text" id="lname" name="lastname" placeholder="Nombre completo">
+                        <input type="text" id="lname" name="name" placeholder="Nombre completo" class="formInput1">
                         <div style="display: flex">
                             <div class="col-sm-6" style="padding: 0">
                                 <input style="margin: 5px auto; display: inline-block" type="text" id="lname"
-                                    name="lastname" placeholder="Teléfono">
+                                    name="tel" placeholder="Teléfono" class="formInput2">
                             </div>
                             <div class="col-sm-6" style="padding: 0">
                                 <input style="margin: 5px 5px; display: inline-block" type="text" id="fname"
-                                    name="firstname" placeholder="Correo">
+                                    name="email" placeholder="Correo" class="formInput3">
                             </div>
                         </div>
-                        <input type="text" id="lname" name="lastname" placeholder="Cuéntanos tu necesidad"
-                            style="height: 100px">
+                        <input type="text" id="lname" name="message" placeholder="Cuéntanos tu necesidad"
+                            style="height: 100px" class="formInput4">
 
                         <input type="submit" value="Enviar">
                     </form>
                     <div class="row margin-resp-contact-f" style="align-self: center">
                         <div class="col-sm-6 datos-contacto">
                             <div class="img-icon">
-                                <img src="img/icons/direccion.png" alt="">
+                                <img src="/assets/images/icons/direccion.png" alt="">
                             </div>
                             <p><b>Dirección:</b><br> <a href="https://goo.gl/maps/NF5cxZBrLLLM6TDg9" target="_blank">1ra
                                     CDA. Lago Atitlán #3. Mexico Nuevo, Miguel Hidalgo, C.P. 11260</a></p>
                         </div>
                         <div class="col-sm-6 datos-contacto">
                             <div class="img-icon">
-                                <img src="img/icons/numeros.png" alt="">
+                                <img src="/assets/images/icons/numeros.png" alt="">
                             </div>
                             <p><b>Números de contacto:</b><br>
                                 <a href="tel:+525578464662">- 5578464662</a><br><a href="tel:+525574247451">-
@@ -59,7 +99,7 @@
                         </div>
                         <div class="col-sm-6 datos-contacto">
                             <div class="img-icon">
-                                <img src="img/icons/envio.png" alt="">
+                                <img src="/assets/images/icons/envio.png" alt="">
                             </div>
                             <p><b>Email:</b> <br> <a
                                     href="mailto:tuconsultor@akkaconsulting.com">tuconsultor<br>@akkaconsulting.com</a>
@@ -67,7 +107,7 @@
                         </div>
                         <div class="col-sm-6 datos-contacto">
                             <div class="img-icon">
-                                <img src="img/icons/whats.png" alt="">
+                                <img src="/assets/images/icons/whats.png" alt="">
                             </div>
                             <p><b>Whats App:</b><br> <a href="https://api.whatsapp.com/send?phone=+525578464662"
                                     target="_blank">- 5578464662</a></p>
