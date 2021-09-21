@@ -24,15 +24,15 @@ var PORT = process.env.PORT || 3000;
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Redirect to https://xyncs.com
-// const targetBaseUrl = 'https://www.xyncs.com/inicio';
+// Redirect to  https://www.akkaconsulting.com.mx
+const targetBaseUrl = 'https://www.akkaconsulting.com.mx';
 
 
 
 // Routes
 app.get('/', function (req, res) {
-    // res.redirect(targetBaseUrl);
-    res.render('inicio');
+    res.redirect(targetBaseUrl);
+    // res.render('inicio');
 
 });
 // app.get('/inicio', function (req, res) {
