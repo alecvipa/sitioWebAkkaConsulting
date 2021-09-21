@@ -25,7 +25,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Redirect to  https://www.akkaconsulting.com.mx
-const targetBaseUrl = 'https://www.akkaconsulting.com.mx';
+const targetBaseUrl = 'https://www.akkaconsulting.com.mx/inicio';
 
 
 
