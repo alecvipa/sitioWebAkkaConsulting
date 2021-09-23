@@ -105,6 +105,12 @@ p {
     margin-top: 0;
     margin-bottom: 1rem
 }
+.parallax{
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
 
 /* abbr[data-original-title],
 abbr[title] {
@@ -1367,6 +1373,10 @@ a:hover{
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 750px;
+    background-position: center;
+    background-attachment: fixed;
+    transition: 0s linear;
+    background-position: 25% 85%;
 }
 .top-img.index{
 	background-size: cover;
@@ -1428,6 +1438,20 @@ a:hover{
     line-height: 1.2;
 	max-width: 800px;
 	margin-bottom: 30px;
+}
+.fa-whatsapp-square{
+    font-size: 5rem;
+}
+.text-contacto-div{
+    margin: 0 auto;
+    color: #fff;
+    font-size: 40px;
+	font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.2;
+	max-width: 800px;
+	margin-bottom: 30px;
+    margin-top: -16%;
 }
 
 #header-bottom-wrap .text-h3-soluciones {
