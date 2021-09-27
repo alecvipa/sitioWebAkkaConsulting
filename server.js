@@ -31,8 +31,8 @@ const targetBaseUrl = 'https://www.akkaconsulting.com.mx/inicio';
 
 // Routes
 app.get('/', function (req, res) {
-    res.redirect(targetBaseUrl);
-    // res.render('inicio');
+    // res.redirect(targetBaseUrl);
+    res.render('inicio');
 
 });
 app.get('/inicio', function (req, res) {
