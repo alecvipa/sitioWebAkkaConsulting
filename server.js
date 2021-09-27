@@ -31,12 +31,12 @@ const targetBaseUrl = 'https://www.akkaconsulting.com.mx/inicio';
 
 // Routes
 app.get('/', function (req, res) {
-    res.redirect(targetBaseUrl);
-    // res.render('inicio');
+    // res.redirect(targetBaseUrl);
+    res.render('inicio');
 
 });
 app.get('/inicio', function (req, res) {
-    res.render('inicio')
+    // res.render('inicio')
 });
 app.get('/privacidad', function (req, res) {
     res.render('privacidad');
@@ -116,7 +116,7 @@ app.post("/ajax/email", function (request, response) {
      <p>Message: ${request.body.message}</p>`;
     var mail = {
         from: '"Team: Xyncs Web Studio',
-        to: 'jhosue@akkaconsulting.com.mx',
+        to: 'hebrit_626@hotmail.com',
         subject: '¡Alguien ha dejado sus datos en tu sitio web!',
         html: htmlBody
     };
