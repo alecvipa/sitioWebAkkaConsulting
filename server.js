@@ -116,7 +116,7 @@ app.post("/ajax/email", function (request, response) {
      <p>Message: ${request.body.message}</p>`;
     var mail = {
         from: '"Team: Xyncs Web Studio',
-        to: 'hebrit_626@hotmail.com',
+        to: 'jhosue@akkaconsulting.com.mx',
         subject: '¡Alguien ha dejado sus datos en tu sitio web!',
         html: htmlBody
     };
