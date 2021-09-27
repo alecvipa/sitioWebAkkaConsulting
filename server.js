@@ -89,6 +89,9 @@ app.get('/team-development', function (req, res) {
 app.get('/ventas-exitosas', function (req, res) {
     res.render('ventas-exitosas');
 });
+app.get('/gracias', function (req, res) {
+    res.render('gracias');
+});
 
 
 // Nodemailer route
