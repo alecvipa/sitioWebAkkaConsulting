@@ -25,8 +25,10 @@
 
                                 <div class="whatsContact">
                                     <div class="img-icon">
-                                        <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=+525578464662');" href="https://api.whatsapp.com/send?phone=+525578464662"
-                                            target="_blank" style="color: #31f378 !important;"><i class="fab fa-whatsapp-square"></i></a>
+                                        <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=+525578464662');"
+                                            href="https://api.whatsapp.com/send?phone=+525578464662" target="_blank"
+                                            style="color: #31f378 !important;"><i
+                                                class="fab fa-whatsapp-square"></i></a>
                                     </div>
                                     <p><b>Whats App</b><br> </p>
                                 </div>
@@ -64,7 +66,7 @@
 
                 <div class="col-sm-12 col-md-6 d-flex align-items-cent sub-title pad-int" style="flex-wrap: wrap">
                     <h3>¡Agenda una asesoría con nosotros!</h3>
-                    <form action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
+                    <form action="/ajax/email" method="POST" onclick="return submitEmailForm(this);">
 
 
                         <input type="text" id="lname" name="name" placeholder="Nombre completo" class="formInput1">
@@ -81,7 +83,9 @@
                         <input type="text" id="lname" name="message" placeholder="Cuéntanos tu necesidad"
                             style="height: 100px" class="formInput4">
 
-                        <input type="submit" value="Enviar">
+                        <a type="submit" value="Enviar"
+                            onclick="return gtag_report_conversion('https://www.akkaconsulting.com.mx/gracias');"
+                            href="https://www.akkaconsulting.com.mx/gracias">Enviar</a>
                     </form>
                     <div class="row margin-resp-contact-f" style="align-self: center">
                         <div class="col-sm-6 datos-contacto">
