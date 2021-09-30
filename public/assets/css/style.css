@@ -848,6 +848,11 @@ a:hover{
     font-weight: 600;
     padding-bottom: 20px;
 }
+.tablePrivacidad{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 @media (max-width:1024px){
 
 	.text-nuestras-p-sol{
