@@ -1370,6 +1370,9 @@ a:hover{
 	#header-wrap {
 		background: #fff!important;
 	}
+    .arrowContainer{
+        margin-top: 5%;
+    }
 }
 
 /*Main Banner Styles*/
@@ -1400,6 +1403,10 @@ a:hover{
 
 .soluciones-conflictos {
 	background-image: url('/assets/images/hero-conflictos.jpg');
+	background-position: 50% 50%;
+}
+.focoBlog {
+	background-image: url('/assets/images/foco.jpg');
 	background-position: 50% 50%;
 }
 .contacto {
@@ -1724,6 +1731,10 @@ a:hover{
 }
 .datos-contacto img{
 	
+}
+
+.blogTitle{
+    margin-top: -14% !important;
 }
 
 @media(max-width:768px){
