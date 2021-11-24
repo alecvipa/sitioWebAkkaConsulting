@@ -112,18 +112,18 @@
     </script>
     <script>
         if (window.location.href == "https://www.akkaconsulting.com.mx/gracias") {
-            < !--Event snippet for Registro + 5 % conversion page-- >
-                <script>
-                    gtag('event', 'conversion', {'send_to': 'AW-10792566791/kWsCCMS4-YADEIeAppoo'});
-    </script>
-    
+            
+            < !--Event snippet for Formulario AKKA conversion page-- >
+
+                gtag('event', 'conversion', { 'send_to': 'AW-10780295638/XZlwCK3xwfcCENaDuZQo' });
+        }
 
     </script>
     <!-- Google Analytics -->
     <script>
-                window.ga = window.ga || function () {(ga.q = ga.q || []).push(arguments)}; ga.l = +new Date;
-                ga('create', 'UA-209656315-1', 'auto');
-                ga('send', 'pageview');
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-209656315-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
@@ -132,12 +132,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PBHWKVVXD"></script>
     <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() {dataLayer.push(arguments); }
-                gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-                gtag('config', 'G-1PBHWKVVXD');
-                gtag('config', 'AW-10780295638');
+        gtag('config', 'G-1PBHWKVVXD');
+        gtag('config', 'AW-10780295638');
     </script>
 </head>
 
@@ -314,69 +314,69 @@
     <!--TODO: Put this code in script file-->
 
     <script>
-                $('div.dropdown').hover(function () {
-                    $('a.dropdown-toggle').dropdown("toggle");
+        $('div.dropdown').hover(function () {
+            $('a.dropdown-toggle').dropdown("toggle");
         }, function () {
-                    $('a.dropdown-toggle').dropdown('toggle');
+            $('a.dropdown-toggle').dropdown('toggle');
         });
 
-                $('li.index-tab').click(function () {
-                    $('li.index-tab').removeClass('is-active');
-                $(this).addClass('is-active');
+        $('li.index-tab').click(function () {
+            $('li.index-tab').removeClass('is-active');
+            $(this).addClass('is-active');
         });
 
-                $(window).scroll(function () {
+        $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 500) {
-                    $(".clearHeader").addClass("darkHeader");
+                $(".clearHeader").addClass("darkHeader");
             } else {
-                    $(".clearHeader").removeClass("darkHeader");
+                $(".clearHeader").removeClass("darkHeader");
             }
         });
 
 
 
 
-                $(function () {
+        $(function () {
             //caches a jQuery object containing the header element
 
 
             var logo = $(".logo-top-white");
-                var width = $(window).width();
-                if (width < 993) {
-                    logo.addClass("logo-top-scrolled");
+            var width = $(window).width();
+            if (width < 993) {
+                logo.addClass("logo-top-scrolled");
             } else {
 
-                    $(window).scroll(function () {
-                        var scroll = $(window).scrollTop();
-                        var width = $(window).width();
-                        if (scroll <= 80 && width < 993) {
-                            logo.addClass("logo-top-scrolled");
-                        } else if (scroll <= 80 && width >= 993) {
-                            logo.removeClass("logo-top-scrolled");
-                        } else {
-                            logo.addClass("logo-top-scrolled");
-                        }
-                    });
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+                    var width = $(window).width();
+                    if (scroll <= 80 && width < 993) {
+                        logo.addClass("logo-top-scrolled");
+                    } else if (scroll <= 80 && width >= 993) {
+                        logo.removeClass("logo-top-scrolled");
+                    } else {
+                        logo.addClass("logo-top-scrolled");
+                    }
+                });
             }
         });
 
-                $(function () {
+        $(function () {
             //caches a jQuery object containing the header element
             var header = $(".navbar-dark");
-                $(window).scroll(function () {
+            $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
                 var width = $(window).width();
                 if (width < 993) {
                     header.addClass("scrolled-nav");
                 } else if (scroll >= 80 && width >= 993) {
                     header.addClass("scrolled-nav");
-                header.removeClass("navbar-dark");
+                    header.removeClass("navbar-dark");
 
                 } else {
                     header.removeClass("scrolled-nav");
-                header.addClass("navbar-dark");
+                    header.addClass("navbar-dark");
                 }
             });
         });
@@ -385,15 +385,15 @@
     </script>
 
     <script>
-                window.onscroll = function () {scrollFunction()};
+        window.onscroll = function () { scrollFunction() };
 
-                function scrollFunction() {
+        function scrollFunction() {
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 && window.innerWidth > 900) {
-                    document.getElementById("header-wrap").style.background = "#fff";
+                document.getElementById("header-wrap").style.background = "#fff";
                 document.getElementById("logo").style.margin = "15px 0";
                 //		document.getElementsByClassName("logo").style.margin = "10px 0";
             } else {
-                    document.getElementById("header-wrap").style.background = "transparent";
+                document.getElementById("header-wrap").style.background = "transparent";
                 document.getElementById("logo").style.margin = "15px 0";
                 //		document.getElementsByClassName("logo").style.margin = "10px 0";
             }
@@ -401,27 +401,27 @@
 
     </script>
     <script>
-                $(document).ready(function () {
-                    // executes when HTML-Document is loaded and DOM is ready
+        $(document).ready(function () {
+            // executes when HTML-Document is loaded and DOM is ready
 
-                    // breakpoint and up  
-                    $(window).resize(function () {
-                        if ($(window).width() >= 980) {
+            // breakpoint and up  
+            $(window).resize(function () {
+                if ($(window).width() >= 980) {
 
-                            // when you hover a toggle show its dropdown menu
-                            $(".navbar .dropdown-toggle").hover(function () {
-                                $(this).parent().toggleClass("show");
-                                $(this).parent().find(".dropdown-menu").toggleClass("show");
-                            });
-
-                            // hide the menu when the mouse leaves the dropdown
-                            $(".navbar .dropdown-menu").mouseleave(function () {
-                                $(this).removeClass("show");
-                            });
-
-                            // do something here
-                        }
+                    // when you hover a toggle show its dropdown menu
+                    $(".navbar .dropdown-toggle").hover(function () {
+                        $(this).parent().toggleClass("show");
+                        $(this).parent().find(".dropdown-menu").toggleClass("show");
                     });
+
+                    // hide the menu when the mouse leaves the dropdown
+                    $(".navbar .dropdown-menu").mouseleave(function () {
+                        $(this).removeClass("show");
+                    });
+
+                    // do something here
+                }
+            });
 
 
 
@@ -430,73 +430,73 @@
     </script>
     <!--  Counter	-->
     <script>
-                (function ($) {
-                    $.fn.countTo = function (options) {
-                        options = options || {};
+        (function ($) {
+            $.fn.countTo = function (options) {
+                options = options || {};
 
-                        return $(this).each(function () {
-                            // set options for current element
-                            var settings = $.extend({}, $.fn.countTo.defaults, {
-                                from: $(this).data('from'),
-                                to: $(this).data('to'),
-                                speed: $(this).data('speed'),
-                                refreshInterval: $(this).data('refresh-interval'),
-                                decimals: $(this).data('decimals')
-                            }, options);
+                return $(this).each(function () {
+                    // set options for current element
+                    var settings = $.extend({}, $.fn.countTo.defaults, {
+                        from: $(this).data('from'),
+                        to: $(this).data('to'),
+                        speed: $(this).data('speed'),
+                        refreshInterval: $(this).data('refresh-interval'),
+                        decimals: $(this).data('decimals')
+                    }, options);
 
-                            // how many times to update the value, and how much to increment the value on each update
-                            var loops = Math.ceil(settings.speed / settings.refreshInterval),
-                                increment = (settings.to - settings.from) / loops;
+                    // how many times to update the value, and how much to increment the value on each update
+                    var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                        increment = (settings.to - settings.from) / loops;
 
-                            // references & variables that will change with each update
-                            var self = this,
-                                $self = $(this),
-                                loopCount = 0,
-                                value = settings.from,
-                                data = $self.data('countTo') || {};
+                    // references & variables that will change with each update
+                    var self = this,
+                        $self = $(this),
+                        loopCount = 0,
+                        value = settings.from,
+                        data = $self.data('countTo') || {};
 
-                            $self.data('countTo', data);
+                    $self.data('countTo', data);
 
-                            // if an existing interval can be found, clear it first
-                            if (data.interval) {
-                                clearInterval(data.interval);
+                    // if an existing interval can be found, clear it first
+                    if (data.interval) {
+                        clearInterval(data.interval);
+                    }
+                    data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+                    // initialize the element with the starting value
+                    render(value);
+
+                    function updateTimer() {
+                        value += increment;
+                        loopCount++;
+
+                        render(value);
+
+                        if (typeof (settings.onUpdate) == 'function') {
+                            settings.onUpdate.call(self, value);
+                        }
+
+                        if (loopCount >= loops) {
+                            // remove the interval
+                            $self.removeData('countTo');
+                            clearInterval(data.interval);
+                            value = settings.to;
+
+                            if (typeof (settings.onComplete) == 'function') {
+                                settings.onComplete.call(self, value);
                             }
-                            data.interval = setInterval(updateTimer, settings.refreshInterval);
+                        }
+                    }
 
-                            // initialize the element with the starting value
-                            render(value);
+                    function render(value) {
+                        var formattedValue = settings.formatter.call(self, value, settings);
+                        $self.html(formattedValue);
+                    }
+                });
+            };
 
-                            function updateTimer() {
-                                value += increment;
-                                loopCount++;
-
-                                render(value);
-
-                                if (typeof (settings.onUpdate) == 'function') {
-                                    settings.onUpdate.call(self, value);
-                                }
-
-                                if (loopCount >= loops) {
-                                    // remove the interval
-                                    $self.removeData('countTo');
-                                    clearInterval(data.interval);
-                                    value = settings.to;
-
-                                    if (typeof (settings.onComplete) == 'function') {
-                                        settings.onComplete.call(self, value);
-                                    }
-                                }
-                            }
-
-                            function render(value) {
-                                var formattedValue = settings.formatter.call(self, value, settings);
-                                $self.html(formattedValue);
-                            }
-                        });
-                    };
-
-                $.fn.countTo.defaults = {
-                    from: 0,               // the number the element should start at
+            $.fn.countTo.defaults = {
+                from: 0,               // the number the element should start at
                 to: 0,                 // the number the element should end at
                 speed: 1000,           // how long it should take to count between the target numbers
                 refreshInterval: 100,  // how often the element should be updated
@@ -506,23 +506,23 @@
                 onComplete: null       // callback method for when the element finishes updating
             };
 
-                function formatter(value, settings) {
+            function formatter(value, settings) {
                 return value.toFixed(settings.decimals);
             }
         }(jQuery));
 
-                jQuery(function ($) {
-                    // custom formatting example
-                    $('.count-number').data('countToOptions', {
-                        formatter: function (value, options) {
-                            return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-                        }
-                    });
+        jQuery(function ($) {
+            // custom formatting example
+            $('.count-number').data('countToOptions', {
+                formatter: function (value, options) {
+                    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                }
+            });
 
-                // start all the timers
-                $('.timer').each(count);
+            // start all the timers
+            $('.timer').each(count);
 
-                function count(options) {
+            function count(options) {
                 var $this = $(this);
                 options = $.extend({}, options || {}, $this.data('countToOptions') || {});
                 $this.countTo(options);
@@ -534,80 +534,80 @@
 
     <script>
 
-                $('.center').slick({
-                    centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 4,
-                arrows: false,
-                responsive: [
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 4,
+            arrows: false,
+            responsive: [
                 {
                     breakpoint: 768,
-                settings: {
-                    arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
                     }
                 },
                 {
                     breakpoint: 480,
-                settings: {
-                    arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
                     }
                 }
-                ]
+            ]
         });
 
-                function prevSlide() {
-                    $('.center').slick('slickPrev');
+        function prevSlide() {
+            $('.center').slick('slickPrev');
         }
-                function nextSlide() {
-                    $('.center').slick('slickNext');
+        function nextSlide() {
+            $('.center').slick('slickNext');
         }
 
     </script>
     <script>
 
-                $('.single').slick({
-                    centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 4,
-                dots: false,
-                arrows: false,
-                responsive: [
+        $('.single').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 4,
+            dots: false,
+            arrows: false,
+            responsive: [
                 {
                     breakpoint: 1200,
-                settings: {
-                    dots: false,
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
+                    settings: {
+                        dots: false,
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
                     }
                 },
                 {
                     breakpoint: 768,
-                settings: {
-                    dots: false,
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
+                    settings: {
+                        dots: false,
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
                     }
                 },
                 {
                     breakpoint: 480,
-                settings: {
-                    arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
                     }
                 }
-                ]
+            ]
         });
 
 
